@@ -19,8 +19,19 @@ public class User {
     private String password;
     private String email;
 
+    private int coin;
+
     @OneToMany
     private List<Field> fields;
+
+    public void earnCoin(int coin){
+        this.coin += coin;
+    }
+
+    public Field addField(Field field){
+        fields.add(field);
+        return field;
+    }
 
     @Builder
     public User(String name, String password, String email) {

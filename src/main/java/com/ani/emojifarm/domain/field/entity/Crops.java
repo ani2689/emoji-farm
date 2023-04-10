@@ -1,6 +1,7 @@
 package com.ani.emojifarm.domain.field.entity;
 
 import com.ani.emojifarm.domain.field.entity.cropsEnum.Status;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -26,6 +27,27 @@ public class Crops {
     @Column(name = "growth_rate")
     private int growthRate;
 
+    @Builder
+    public Crops(String name) {
+        this.name = name;
+        this.emojiName = ":seedling:";
+    }
+
+    public void sprout(){
+        this.emojiName = ":herb:";
+    }
+
+    public void fruitful(){
+        this.emojiName = ":"+name+":";
+    }
+
+    public void watering(){
+        status = Status.DANK;
+    }
+
+    public void drying(){
+        status = Status.DRIED;
+    }
 
 
 }
