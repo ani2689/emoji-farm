@@ -1,6 +1,6 @@
-package com.ani.emojifarm.domain.field.entity;
+package com.ani.emojifarm.domain.field.domain.entity;
 
-import com.ani.emojifarm.domain.field.entity.cropsEnum.Status;
+import com.ani.emojifarm.domain.field.domain.entity.cropsEnum.Status;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

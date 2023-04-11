@@ -1,7 +1,7 @@
-package com.ani.emojifarm.domain.field.repository;
+package com.ani.emojifarm.domain.field.domain.repository;
 
-import com.ani.emojifarm.domain.field.entity.Field;
-import com.ani.emojifarm.domain.field.entity.fieldEnum.Status;
+import com.ani.emojifarm.domain.field.domain.entity.Field;
+import com.ani.emojifarm.domain.field.domain.entity.fieldEnum.Status;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

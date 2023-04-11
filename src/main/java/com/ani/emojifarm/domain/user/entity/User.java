@@ -1,6 +1,6 @@
 package com.ani.emojifarm.domain.user.entity;
 
-import com.ani.emojifarm.domain.field.entity.Field;
+import com.ani.emojifarm.domain.field.domain.entity.Field;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
