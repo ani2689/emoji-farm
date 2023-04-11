@@ -6,7 +6,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class cropsDto {
+public class CropsDto {
     private Long id;
     private String name;
     private String emojiName;
